@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lexical Editor</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="text">
+        <h1>Lexical Editor</h1>
+    </div>
+    <div class="edit">
+        <div class="editor-container">
+            <div class="toolbar">
+                <button id="bold-btn"><strong>Bold</strong></button>
+                <button id="italic-btn"><em>Italic</em></button>
+                <button id="underline-btn"><u>Underline</u></button>
+                <div class="line"></div>
+                <button id="undo-btn">↩ Undo</button>
+                <button id="redo-btn">↪ Redo</button>
+            </div>
+            <div class="editor-wrapper">
+                <div id="editor" contenteditable="true"></div>
+            </div>
+        </div>
+    </div>
+    
+    <script type="module" src="src/editor.js">
+        
+    </script>
+</body>
+</html>

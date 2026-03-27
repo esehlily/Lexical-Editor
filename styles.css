@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+.text {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+.edit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.editor-container {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    width: 100%;
+    max-width: 800px;
+    overflow: hidden;
+}
+
+.toolbar {
+    background: #f8f9fa;
+    border-bottom: 1px solid #e9ecef;
+    padding: 12px 16px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.toolbar button {
+    background: white;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 8px 12px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.2s;
+    color: #495057;
+}
+
+.toolbar button:hover {
+    background: #e9ecef;
+}
+
+.toolbar button.active {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.editor-wrapper {
+    padding: 20px;
+    min-height: 400px;
+}
+
+#editor {
+    outline: none;
+    min-height: 360px;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.editor-paragraph {
+    margin: 0 0 1em 0;
+}
+
+.editor-text-bold {
+    font-weight: bold;
+}
+
+.editor-text-italic {
+    font-style: italic;
+}
+
+.editor-text-underline {
+    text-decoration: underline;
+}
+
+.history-status {
+    font-size: 12px;
+    color: #6c757d;
+    padding: 8px 16px;
+    border-top: 1px solid #e9ecef;
+    background: #f8f9fa;
+}
+
+.line{
+    width: 1px; 
+    background: #dee2e6; 
+    margin: 0 4px;
+}
